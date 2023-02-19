@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Stack} from '@mui/material';
+import Stack from '@mui/material/Stack';
 import Switch from 'react-ios-switch';
 
 export default function Modes() {
