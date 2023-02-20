@@ -36,16 +36,6 @@ export default function Content({checked,appear}) {
                 height:'50%',
                 width:'50%',
             }}>
-                {/* <img src={background} alt='React-Logo' style={{
-                  position:"absolute",
-                  minHeight:'30%',
-                  minWidth:'30%',
-                  top:50,
-                  right:0,
-                  color:checked ? '#33373E' : '#F5F5F5',
-                  
-                  
-                }} /> */}
             </div>
             <section className="list-items" style={{
                 color: checked ? '#FFFFFF' : '#2B283A',
@@ -72,15 +62,15 @@ export default function Content({checked,appear}) {
               </ul>
             </section>
             <p style={{
-            display: 'flex',
+            // display: appear ? 'none' : 'flex',
             position:"absolute",
             top:'5%',
             left:"45%",
             color: checked ? "#FFFFFF" : '#000',
             transition:"display, 1s",
             transitionDuration: 3,
-            opacity: appear ? 0.5 : 0,
-          }}>Dark Mode: {checked ? "ON" : "OFF"}</p>
+            opacity:  appear ? 0 : 0.9
+          }}>{checked ? "Dark" : "Light"} Mode</p>
         </main>
     )
 }

@@ -2,12 +2,12 @@ import Stack from '@mui/material/Stack';
 import Switch from 'react-ios-switch';
 
 
-export function ThemeSwitch({checked,setChecked,appear,setAppear}) {
+export function ThemeSwitch({checked,setChecked,setAppear}) {
   
     const handleClick = () => {
           setChecked(!checked);    
-          setAppear(true)
-          setTimeout(()=>{setAppear(false)}, 2000)
+          setAppear(false);
+          setTimeout(()=>{setAppear(true)},2000)
     }
 
     return (
