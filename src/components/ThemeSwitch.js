@@ -7,7 +7,7 @@ export function ThemeSwitch({checked,setChecked,setAppear}) {
     const handleClick = () => {
           setChecked(!checked);    
           setAppear(false);
-          setTimeout(()=>{setAppear(true)},2000)
+          setTimeout(()=>{setAppear(true)},1000)
     }
 
     return (

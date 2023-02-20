@@ -66,10 +66,10 @@ export default function Content({checked,appear}) {
             position:"absolute",
             top:'5%',
             left:"45%",
-            color: checked ? "#FFFFFF" : '#000',
+            color: checked ? "#FFF" : '#000000',
             transition:"display, 1s",
             transitionDuration: 3,
-            opacity:  appear ? 0 : 0.9
+            opacity:  appear ? 0 : 0.5
           }}>{checked ? "Dark" : "Light"} Mode</p>
         </main>
     )
