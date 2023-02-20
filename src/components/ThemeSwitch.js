@@ -35,7 +35,7 @@ export function ThemeSwitch({checked,setChecked,setAppear}) {
           /> </span>
           
         <span style={{
-          paddingTop:5, 
+          paddingTop:7, 
           paddingLeft:10,
           color: checked ? '#FFFFFF' : '#D5D4D8',
           }}>Dark</span>
